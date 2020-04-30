@@ -1,0 +1,31 @@
+{
+  "name": "express-seed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx env-cmd -f ./environments/test.env jest",
+    "dev": "npx env-cmd -f ./environments/local.env nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "env-cmd": "^10.1.0",
+    "helmet": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.6",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.4",
+    "@types/supertest": "^2.0.8",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^25.5.2",
+    "nodemon": "^2.0.3",
+    "supertest": "^4.0.2"
+  }
+}
